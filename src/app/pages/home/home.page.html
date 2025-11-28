@@ -1,0 +1,16 @@
+<ion-content>
+
+  <div class="home-container">
+    <h1>Welcome, <span>{{ user?.name || user?.email }}</span> 👋</h1>
+
+    <p class="subtitle">
+      You are now logged in.  
+      Enjoy your session!
+    </p>
+
+    <ion-button expand="block" color="danger" (click)="logout()">
+      Logout
+    </ion-button>
+  </div>
+
+</ion-content>

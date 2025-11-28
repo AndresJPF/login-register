@@ -1,0 +1,41 @@
+<ion-content>
+  <div class="card-login">
+
+    <h2>Welcome Back</h2>
+
+    <form (ngSubmit)="onLogin()">
+
+      <ion-item>
+        <ion-input
+          [(ngModel)]="email"
+          name="email"
+          type="email"
+          label="Email"
+          labelPlacement="floating"
+          required>
+        </ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input
+          [(ngModel)]="password"
+          name="password"
+          type="password"
+          label="Password"
+          labelPlacement="floating"
+          required>
+        </ion-input>
+      </ion-item>
+
+      <ion-button type="submit" expand="block" class="btn-login">
+        Login
+      </ion-button>
+    </form>
+
+    <p class="text-small">
+      Don’t have an account?
+      <a routerLink="/register">Create one</a>
+    </p>
+
+  </div>
+</ion-content>

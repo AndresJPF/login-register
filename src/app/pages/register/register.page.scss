@@ -1,0 +1,54 @@
+/* ---- Card container ---- */
+.card-register {
+  width: 90%;
+  max-width: 380px;
+  margin: 40px auto;
+  padding: 25px;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
+}
+
+/* ---- Title ---- */
+.card-register h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* ---- Inputs ---- */
+ion-item {
+  --background: transparent;
+  --border-radius: 10px;
+  --padding-start: 0;
+  margin-bottom: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+
+/* ---- Register button ---- */
+.btn-register {
+  width: 100%;
+  margin-top: 15px;
+  border-radius: 12px;
+  padding: 12px;
+  font-size: 16px;
+  text-transform: none;
+  letter-spacing: 0.5px;
+  background: #4c8dff;
+  color: white;
+}
+
+/* ---- Link to login ---- */
+.text-small {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
+
+.text-small a {
+  color: #4c8dff;
+  text-decoration: none;
+}

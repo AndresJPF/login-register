@@ -26,6 +26,7 @@ Una aplicación de autenticación desarrollada con Ionic Angular y TypeScript qu
 git clone https://github.com/AndresJPF/login-register.git
 cd login-register
 
+```
 
 **Instalar dependencias:**
 ```bash
@@ -36,14 +37,9 @@ npm install
 
 ### Desarrollo
 
-**Iniciar JSON Server (Terminal 1):**
+**Iniciar Proyecto:**
 ```bash
-npm run server
-```
-
-**Iniciar la aplicación Ionic (Terminal 2):**
-```bash
-ionic serve
+npm run start
 ```
 
 **Abrir en el navegador:**

@@ -1,54 +1,59 @@
-Login & Register App
+```markdown
+# Login & Register App
+
 Una aplicación de autenticación desarrollada con Ionic Angular y TypeScript que permite a los usuarios registrarse e iniciar sesión con persistencia de datos.
 
-Características
-Sistema de login y registro con validaciones
+## Características
 
-Almacenamiento local con localStorage
+- Sistema de login y registro con validaciones
+- Almacenamiento local con localStorage
+- Interfaz moderna con diseño responsive
+- JSON Server como backend simulado
+- Desarrollado con TypeScript
 
-Interfaz moderna con diseño responsive
+## Tecnologías
 
-JSON Server como backend simulado
+- **Ionic Angular**
+- **TypeScript**
+- **Angular**
+- **JSON Server**
+- **CSS3**
 
-Desarrollado con TypeScript
+## Instalación
 
-Tecnologías
-Ionic Angular
-
-TypeScript
-
-Angular
-
-JSON Server
-
-CSS3
-
-Instalación
-Clonar el repositorio:
-
-bash
-git clone <url-del-repositorio>
+**Clonar el repositorio:**
+```bash
+git clone https://github.com/AndresJPF/login-register.git
 cd login-register
-Instalar dependencias:
+```
 
-bash
+**Instalar dependencias:**
+```bash
 npm install
-Ejecución
-Desarrollo
-Iniciar JSON Server (Terminal 1):
+```
 
-bash
+## Ejecución
+
+### Desarrollo
+
+**Iniciar JSON Server (Terminal 1):**
+```bash
 npm run server
-Iniciar la aplicación Ionic (Terminal 2):
+```
 
-bash
+**Iniciar la aplicación Ionic (Terminal 2):**
+```bash
 ionic serve
-Abrir en el navegador:
+```
 
-text
+**Abrir en el navegador:**
+```
 http://localhost:8100
-Estructura del Proyecto
-text
+```
+
+## Estructura del Proyecto
+
+```
 src/
 ├── app/
 │   ├── pages/
@@ -59,15 +64,18 @@ src/
 │   │   └── auth.service.ts
 │   └── app-routing.module.ts
 db.json
-Usuario de Prueba
-Email: demo@example.com
+```
 
-Contraseña: 123456
+## Usuario de Prueba
 
-Configuración
-El archivo db.json contiene la estructura de datos para JSON Server:
+- **Email:** demo@example.com
+- **Contraseña:** 123456
 
-json
+## Configuración
+
+El archivo `db.json` contiene la estructura de datos para JSON Server:
+
+```json
 {
   "users": [
     {
@@ -79,20 +87,22 @@ json
     }
   ]
 }
-Scripts Disponibles
-bash
+```
+
+## Scripts Disponibles
+
+```bash
 npm start          # Inicia servidor de desarrollo
-npm run server    # Inicia JSON Server
-npm run build     # Build de producción
-Funcionalidades
-Validación de campos requeridos
+npm run server     # Inicia JSON Server
+npm run build      # Build de producción
+```
 
-Verificación de formato de email
+## Funcionalidades
 
-Confirmación de contraseña
-
-Persistencia de sesión
-
-Protección de rutas
-
-Diseño responsive
+- Validación de campos requeridos
+- Verificación de formato de email
+- Confirmación de contraseña
+- Persistencia de sesión
+- Protección de rutas
+- Diseño responsive
+```

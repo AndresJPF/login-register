@@ -1,24 +1,65 @@
 <ion-content>
-  <div class="card-register">
-    <h2>Create Account</h2>
+  <main>
+    <div class="left">
+      <!-- Imagen de fondo -->
+    </div>
+    <div class="right">
+      <h1>Registrarse</h1>
+      
+      <form (ngSubmit)="register()">
+        <div class="camp">
+          <label for="name">Nombre</label>
+          <input 
+            type="text" 
+            id="name" 
+            [(ngModel)]="name" 
+            name="name"
+            placeholder="Ingresa tu nombre"
+            required>
+        </div>
 
-    <ion-item>
-      <ion-input label="Name" labelPlacement="floating"></ion-input>
-    </ion-item>
+        <div class="camp">
+          <label for="email">Email</label>
+          <input 
+            type="email" 
+            id="email" 
+            [(ngModel)]="email" 
+            name="email"
+            placeholder="Ingresa tu email"
+            required>
+        </div>
 
-    <ion-item>
-      <ion-input label="Email" type="email" labelPlacement="floating"></ion-input>
-    </ion-item>
+        <div class="camp">
+          <label for="password">Contraseña</label>
+          <input 
+            type="password" 
+            id="password" 
+            [(ngModel)]="password" 
+            name="password"
+            placeholder="Ingresa tu contraseña"
+            required>
+        </div>
 
-    <ion-item>
-      <ion-input label="Password" type="password" labelPlacement="floating"></ion-input>
-    </ion-item>
+        <div class="camp">
+          <label for="confirmPassword">Confirmar Contraseña</label>
+          <input 
+            type="password" 
+            id="confirmPassword" 
+            [(ngModel)]="confirmPassword" 
+            name="confirmPassword"
+            placeholder="Confirma tu contraseña"
+            required>
+        </div>
 
-    <ion-button expand="block" class="btn-register">Register</ion-button>
-
-    <p class="text-small">
-      Already have an account?
-      <a routerLink="/login">Login</a>
-    </p>
-  </div>
+        <div class="buttons">
+          <button type="submit" id="logBtn">
+            Registrarse
+          </button>
+          <button type="button" id="registerBtn" (click)="goToLogin()">
+            ¿Ya tienes cuenta? Inicia Sesión
+          </button>
+        </div>
+      </form>
+    </div>
+  </main>
 </ion-content>

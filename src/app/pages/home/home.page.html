@@ -1,16 +1,14 @@
-<ion-content>
-
-  <div class="home-container">
-    <h1>Welcome, <span>{{ user?.name || user?.email }}</span> 👋</h1>
-
-    <p class="subtitle">
-      You are now logged in.  
-      Enjoy your session!
-    </p>
-
-    <ion-button expand="block" color="danger" (click)="logout()">
-      Logout
-    </ion-button>
+<ion-content class="home-content">
+  <div class="welcome-card" *ngIf="user">
+    <ion-icon name="person-circle-outline" class="user-icon"></ion-icon>
+    <h1>¡Bienvenido, {{ user.name }}!</h1>
+    <p>Has iniciado sesión correctamente en tu cuenta.</p>
+    <div class="user-info">
+      <p><strong>Email:</strong> {{ user.email }}</p>
+      <p><strong>Fecha de registro:</strong> {{ user.createdAt | date:'medium' }}</p>
+    </div>
+    <button (click)="logout()" class="logout-btn">
+      Cerrar Sesión
+    </button>
   </div>
-
 </ion-content>

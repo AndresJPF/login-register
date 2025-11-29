@@ -1,51 +1,130 @@
-/*Card*/
-.card-login {
-  width: 90%;
-  max-width: 380px;
-  margin: 45px auto;
-  padding: 28px;
-  border-radius: 16px;
-  background: #ffffff;
-  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.1);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/*Title*/
-.card-login h2 {
+ion-content {
+  --background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+}
+
+main {
+  display: flex;
+  width: 100%;
+  max-width: 900px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.left {
+  flex: 1;
+  background: url('https://source.unsplash.com/random/800x600/?tech') center/cover no-repeat;
+  min-height: 500px;
+  display: none;
+}
+
+.right {
+  flex: 1;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  color: #5c6bc0;
+  margin-bottom: 2rem;
   text-align: center;
-  font-size: 26px;
-  margin-bottom: 22px;
+  font-size: 2rem;
+}
+
+form {
+  width: 100%;
+}
+
+.camp {
+  margin-bottom: 1.5rem;
+}
+
+.camp label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #555;
+  font-weight: 500;
+}
+
+.camp input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.camp input:focus {
+  border-color: #5c6bc0;
+  outline: none;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 2rem;
+}
+
+button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
   font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+#logBtn {
+  background-color: #5c6bc0;
+  color: white;
+}
+
+#logBtn:hover {
+  background-color: #3f51b5;
+}
+
+#registerBtn {
+  background-color: #f5f5f5;
   color: #333;
 }
 
-/*Inputs*/
-ion-item {
-  --background: transparent;
-  --border-radius: 10px;
-  margin-bottom: 14px;
-  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
-  border-radius: 10px;
+#registerBtn:hover {
+  background-color: #e0e0e0;
 }
 
-/*Button*/
-.btn-login {
-  margin-top: 18px;
-  padding: 12px;
-  border-radius: 14px;
-  background: #4c8dff;
-  color: white;
-  font-size: 16px;
+/* Responsive */
+@media (min-width: 768px) {
+  .left {
+    display: block;
+  }
+  .right {
+    padding: 3rem;
+  }
+  .buttons {
+    flex-direction: row;
+  }
 }
 
-/*Register link*/
-.text-small {
-  margin-top: 18px;
-  text-align: center;
-  font-size: 14px;
-  color: #666;
-}
-
-.text-small a {
-  color: #4c8dff;
-  text-decoration: none;
+@media (min-width: 1080px) {
+  .right {
+    padding: 4rem;
+  }
 }

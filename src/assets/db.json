@@ -1,4 +1,18 @@
-{"users":{
-
-    
-}}
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Usuario Demo",
+      "email": "demo@example.com",
+      "password": "123456",
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "1999",
+      "name": "user1",
+      "email": "user1@mail.com",
+      "password": "pasword1",
+      "createdAt": "2025-11-29T02:41:47.321Z"
+    }
+  ]
+}

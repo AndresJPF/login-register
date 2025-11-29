@@ -1,4 +1,4 @@
-```markdown
+
 # Login & Register App
 
 Una aplicación de autenticación desarrollada con Ionic Angular y TypeScript que permite a los usuarios registrarse e iniciar sesión con persistencia de datos.
@@ -25,7 +25,7 @@ Una aplicación de autenticación desarrollada con Ionic Angular y TypeScript qu
 ```bash
 git clone https://github.com/AndresJPF/login-register.git
 cd login-register
-```
+
 
 **Instalar dependencias:**
 ```bash

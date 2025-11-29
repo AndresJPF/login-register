@@ -7,7 +7,6 @@ import { AuthService } from 'src/app/services/auth.service';
   selector: 'app-register',
   templateUrl: './register.page.html',
   styleUrls: ['./register.page.scss'],
-  standalone: true
 })
 export class RegisterPage {
 
